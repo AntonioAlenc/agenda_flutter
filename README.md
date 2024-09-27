@@ -1,16 +1,17 @@
-# agenda_flutter
+# Agenda de Contatos - Flutter
 
-A new Flutter project.
+Este é um app de agenda de contatos desenvolvido em Flutter, permitindo adicionar, editar, listar e remover contatos (nome, telefone e e-mail).
 
-## Getting Started
+Funcionalidades
+Listar, adicionar, editar e remover contatos.
+Persistência de dados.
+Paleta de cores inspirada na Binance: amarelo (#F0B90B), cinza escuro (#12161C), e cinza claro (#848E9C).
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Estrutura do Projeto
+lib/
+├── models/contato.dart             # Modelo de contato
+├── screens/contact_list_screen.dart  # Tela de listagem
+├── screens/contact_form_screen.dart  # Tela de formulário
+└── main.dart                       # Arquivo principal
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
