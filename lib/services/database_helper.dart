@@ -1,11 +1,13 @@
 import 'dart:async';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import '../models/contact.dart';
 
 class DatabaseHelper {
   static final DatabaseHelper _instance = DatabaseHelper._internal();
   static Database? _database;
+  static final _secureStorage = FlutterSecureStorage();
 
   factory DatabaseHelper() {
     return _instance;
@@ -86,7 +88,7 @@ class DatabaseHelper {
         'email': contact.email,
       },
       where: 'id = ?',
-      whereArgs: [contact.name], 
+      whereArgs: [contact.name],
     );
   }
 
@@ -115,6 +117,19 @@ class DatabaseHelper {
       whereArgs: [username, password],
     );
     return result.isNotEmpty ? result.first : null;
+  }
+
+  // Funções para gerenciar a sessão segura
+  Future<void> saveSession(String username) async {
+    await _secureStorage.write(key: 'session', value: username);
+  }
+
+  Future<String?> getSession() async {
+    return await _secureStorage.read(key: 'session');
+  }
+
+  Future<void> clearSession() async {
+    await _secureStorage.delete(key: 'session');
   }
 
   Future<void> close() async {
