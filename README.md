@@ -25,3 +25,6 @@ Feito dia 30/10 (ATIVIDADE NÃO ENTREGUE NO PRAZO, CONSIDERE SE PUDER)<br />
      - Ao Logar guardar nome de usuario como token no sharedPreferences<br />
   Ao entrar no app verificar o token guardado no sharedPreferences<br />
      - Caso possua token entrar para tela de listagem<br />
+
+Feito dia 31/10 (ATIVIDADE ENTREGUE DENTRO DO PRAZO)<br />
+  Alterar a opção de guardar sessão para o secureStorage<br />
