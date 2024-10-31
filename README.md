@@ -15,3 +15,13 @@ lib/<br />
 ├── screens/contact_form_screen.dart  # Tela de formulário<br />
 └── main.dart                       # Arquivo principal<br />
 
+Feito dia 30/10 (ATIVIDADE NÃO ENTREGUE NO PRAZO, CONSIDERE SE PUDER)<br />
+  Implementar persistencia em banco de dados na atividade da agenda<br />
+
+Feito dia 30/10 (ATIVIDADE NÃO ENTREGUE NO PRAZO, CONSIDERE SE PUDER)<br />
+  Implementar tela de login<br />
+     - Criar tabela de login no banco<br />
+     - Na tela ter opção de cadastrar<br />
+     - Ao Logar guardar nome de usuario como token no sharedPreferences<br />
+  Ao entrar no app verificar o token guardado no sharedPreferences<br />
+     - Caso possua token entrar para tela de listagem<br />
